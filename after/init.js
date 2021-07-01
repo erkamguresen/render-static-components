@@ -12,6 +12,7 @@ storiesRoot.appendChild(storiesDiv('stories'));
 
 const postRoot = document.getElementById('post-root');
 postRoot.appendChild(postDiv('post'));
+postRoot.appendChild(postDiv('post'));
 
 const userRoot = document.getElementById('user-root');
 userRoot.appendChild(userDiv('user-profile'));

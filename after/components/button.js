@@ -1,3 +1,4 @@
+import { imgElement } from './img.js';
 import { storiesSpan, spanElement } from './span.js';
 
 export const storiesButton = (className = '', idName = '') => {
@@ -11,4 +12,22 @@ export const storiesButton = (className = '', idName = '') => {
   span = spanElement('insta story', 'name');
   button.appendChild(span);
   return button;
+};
+
+export const buttonWithImg = (
+  buttonClassName = '',
+  buttonIdName = '',
+
+  imgSrc,
+  imgAlt = '',
+  imgClassName = '',
+  imgIdName = ''
+) => {
+  const returnButton = document.createElement('button');
+  returnButton.className = buttonClassName;
+  returnButton.id = buttonIdName;
+
+  returnButton.appendChild(imgElement(imgSrc, imgAlt, imgClassName, imgIdName));
+
+  return returnButton;
 };
