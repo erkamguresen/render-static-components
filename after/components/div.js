@@ -1,8 +1,8 @@
 export const divElement = (className = '', idName = '') => {
-  const newDivElement = document.createElement('div');
+  const newPostDiv = document.createElement('div');
 
-  newDivElement.className = className;
-  newDivElement.id = idName;
+  newPostDiv.className = className;
+  newPostDiv.id = idName;
 
-  return newDivElement;
+  return newPostDiv;
 };
